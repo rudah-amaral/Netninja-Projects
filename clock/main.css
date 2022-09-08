@@ -1,0 +1,31 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  background: #333;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.clock {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4em;
+  color: yellow;
+  font-family: arial;
+}
+
+.clock span {
+  background: #444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+}

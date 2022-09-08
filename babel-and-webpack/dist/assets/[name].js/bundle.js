@@ -1,0 +1,1 @@
+!function(){"use strict";Promise.resolve("some value").then((function(e){return console.log(e)}))}();
