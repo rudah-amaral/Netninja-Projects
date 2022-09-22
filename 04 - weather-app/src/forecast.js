@@ -1,6 +1,6 @@
 export default class Forecast {
   constructor() {
-    this.key = "UQtbNahDt0fsnakXOSGOROB2BVuoThLA";
+    this.key = process.env.ACCUWEATHER_API_KEY;
     this.currentconditionsURI =
       "http://dataservice.accuweather.com/currentconditions/v1/";
     this.cityURI =
