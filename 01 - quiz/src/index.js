@@ -23,7 +23,7 @@ form.addEventListener("submit", (e) => {
 
   let increasingScore = 0;
   const timer = setInterval(() => {
-    if (increasingScore > score) {
+    if (increasingScore >= score) {
       clearInterval(timer);
     }
 
