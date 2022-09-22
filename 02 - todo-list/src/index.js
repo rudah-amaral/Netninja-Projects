@@ -1,3 +1,5 @@
+import "./styles/main.css";
+
 const search = document.querySelector(".search input");
 const list = document.querySelector(".todos");
 const addForm = document.querySelector(".add");
@@ -15,7 +17,7 @@ const generateTemplate = (todoTxt) => {
   list.insertAdjacentHTML("beforeend", htmlTemplate);
 };
 
-filterTodos = (term) => {
+const filterTodos = (term) => {
   [...list.children]
     .filter((todo) => !todo.textContent.toLowerCase().includes(term))
     .forEach((todo) => todo.classList.add("d-none"));
