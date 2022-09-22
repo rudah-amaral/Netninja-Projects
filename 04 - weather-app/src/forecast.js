@@ -1,4 +1,4 @@
-class Forecast {
+export default class Forecast {
   constructor() {
     this.key = "UQtbNahDt0fsnakXOSGOROB2BVuoThLA";
     this.currentconditionsURI =

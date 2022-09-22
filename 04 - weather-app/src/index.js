@@ -1,3 +1,6 @@
+import Forecast from "./forecast";
+import "./styles/main.css";
+
 const cityForm = document.querySelector("form");
 const card = document.querySelector(".card");
 const details = document.querySelector(".details");
@@ -17,8 +20,10 @@ const updateUI = ({ cityDetails, weather }) => {
     </div>
   `;
 
-  weather.IsDayTime ? (time.src = "img/day.svg") : (time.src = "img/night.svg");
-  icon.src = `img/icons/${weather.WeatherIcon}.svg`;
+  weather.IsDayTime
+    ? (time.src = "assets/img/day.svg")
+    : (time.src = "assets/img/night.svg");
+  icon.src = `assets/img/icons/${weather.WeatherIcon}.svg`;
 
   if (card.classList.contains("d-none")) card.classList.remove("d-none");
 };
