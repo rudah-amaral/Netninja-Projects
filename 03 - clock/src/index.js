@@ -1,3 +1,5 @@
+import "./styles/main.css";
+
 const clock = document.querySelector(".clock");
 
 const tick = () => {
