@@ -1,4 +1,4 @@
-class ChatUI {
+export default class ChatUI {
   constructor(list) {
     this.list = list;
   }
